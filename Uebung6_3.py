@@ -1,20 +1,20 @@
 def summieren(bis):
-    if type(bis)==int:
-        summe=0
-        for i in range(1,bis+1):
-            summe+=i
+    if type(bis)==int:  #Überprüfen, dass die Eingabe tatsächlich ein integer ist
+        summe=0 #Hier drauf wird aufgerechnet
+        for i in range(1,bis+1):    #1 bis zur festgelegten 'bis'-zahl. +1 aufgrund der Zählweise von Python, da die 'bis'-Zahl sonst ausgelassen würde
+            summe+=i    #wird immer zur Summe hinzugefügt
         return(summe)
     else:
         print("Bitte geben Sie eine Ganze Zahl (Int) ein.")
 print(summieren(4))
 
 def runden(zahl, up):
-    if (type(zahl)!=int and type(zahl)!=float) or type(up)!=bool:
+    if (type(zahl)!=int and type(zahl)!=float) or type(up)!=bool:   #Überprüfung, ob tatsächlich eine Zahl und ein Bool eingegeben wurden
         print("Bitte geben Sie eine Zahl (Int oder Float) und einen Bool (True/False) ein!")
-        return()
-    if up==True:
+        return()    #Wenn nicht: Abbruch
+    if up==True:    #Wenn aufgerundet werden soll, werden mithilfe von int() die Dezimalstellen entfernt und dann durch +1 auf die nächste Zahl erhöht
         return(int(zahl)+1)
-    else:
+    else:   #Wenn nicht aufgerundet werden soll, werden einfach mit int() die nachkommastellen entfernt, sodass auf die nächst-niedrigere ganze Zahl abgerundet wird
         return(int(zahl))
 print(runden(4.7,True))
 
