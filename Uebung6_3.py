@@ -45,3 +45,29 @@ def differenzen(liste):
     return(differences)
 #print(differenzen([4,3,7,6,1,5,2,8,10,13,11,12]))
 print(differenzen(7))
+
+#Rätsel 1
+satz = "Python ist cool!"
+def meineFunktion():
+    satz = "Python stinkt!"
+    print(satz)
+meineFunktion()
+#Es wird "Python stinkt!" ausgegeben, da die lokale Variable satz innerhalb der Funktion mit print(satz) aufgerufen wird
+
+#Rätsel 2
+satz = "Python ist cool!"
+def meineFunktion():
+    satz = "Python stinkt!"
+meineFunktion()
+print(satz)
+#Die Funktion ändert die Variable satz nur lokal. Da print(satz) aber außerhalb der funktion aufgerufen wird, wird die globale Variable satz = "Python ist cool!" ausgegeben.
+
+#Rätsel 3
+satz = "Python ist cool!"
+def meineFunktion():
+    print(satz)
+    satz = "Python stinkt!"
+    print(satz)
+print(satz)
+#Es wird nur die globale Variable satz = "Python ist cool!" ausgegeben, da die Funktion zwar definiert, aber nicht aufgerufen wird.
+# Würde die Funktion aufgerufen, würde sie als erstes die globale Variable satz = "Python ist cool!" aufgeben. Anschließend wird satz lokal geändert zu satz = "Python stinkt!" und ausgegeben. Die Funktion würde also zuerst "Python ist cool!" und dann "Python stinkt!" ausgeben.
