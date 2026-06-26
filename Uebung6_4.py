@@ -18,24 +18,26 @@ def absolute(number):
 print(absolute(-4))
 
 def anytrue(it):
+    #Überprüfen, dass die Eingabe tatsächlich ein iterierbares Objekt ist
     try:
         iter(it)
     except:
         print("The argument must be iterable!")
-        return()
-    success=False
+        return
+    #for-loop geht durch alle Elemente des iterierbaren objekts und prüft einzelnen, ob sie True sind
     for element in it:
         if element==True:
+            #Wenn ja, wird die Funktion mit dem Output 'True' beendet
             return(True)
+    #Falls nicht, endet sie mit dem Output 'False'
     return(False)
 print(anytrue([False,True,False,False]))
 
 def binary(integer):
     if type(integer)!=int:
         print("The argument must be Integer.")
-        return
+        return()
     b=str()
-    rest=int()
     while integer!=0:
         if integer%2!=0:
             integer=(integer-1)/2
@@ -46,9 +48,17 @@ def binary(integer):
     return(b)
 print(binary(47))
 
+#Als Dictionary
 def enum(list):
     enum={}
     for i in range(len(list)):
         enum.update({i:list[i]})
+    return(enum)
+print(enum(['apfel','birne','banane']))
+#Als Liste mit Tuples
+def enum(list):
+    enum=[]
+    for i in range(len(list)):
+        enum.append((i, list[i]))
     return(enum)
 print(enum(['apfel','birne','banane']))
