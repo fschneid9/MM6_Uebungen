@@ -49,6 +49,3 @@ while success==True:
             break
     geschichte.seek(0)
 geschichte.close()
-    
-        
-
