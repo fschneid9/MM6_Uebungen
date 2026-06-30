@@ -73,8 +73,8 @@ def transcription(sequence):
 #print(transcription(ADH_DNA))
 
 def translation(RNA):
-    tss=RNA.find('AUG') #Start-Codon finden
-    CDS=RNA[tss:]   #Zu-Translatierende RNA beginnt mit dem Start-Codon
+    start=RNA.find('AUG') #Start-Codon finden
+    CDS=RNA[start:]   #Zu-Translatierende RNA beginnt mit dem Start-Codon
     AA=str()    #Leerer String, in dem die AA-Sequenz aufgebaut wird
     while len(CDS)>=3:  #Solange noch mindestens ein ganzes Codon noch nicht translatiert wurde:
         codon=CDS[:3]   #Codon sind die ersten drei Basen
