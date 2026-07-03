@@ -1,5 +1,4 @@
 path=input('Dateipfad')
-
 file=open(path, 'r')
     
 fasta_dict={}    
@@ -30,6 +29,7 @@ print(fasta_dict)
 #     geschichte.close()
 
 path=input('Dateipfad')
+path='/vol/gbsb/fschneid/MM6/Uebungen_Git/MM6_Uebungen/unendliche_geschichte.txt'
 success=True
 geschichte = open(path, 'r')
 print('''
