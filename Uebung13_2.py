@@ -4,7 +4,7 @@ import numpy as np
 success=False
 nums=[]
 while success==False:
-    z=input('Please enter your numbers. End your list by pressing Enter.')
+    z=input('Please enter your numbers. End your list by just pressing Enter.')
     if z=='':
         success=True
     else:
