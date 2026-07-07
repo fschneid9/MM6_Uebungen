@@ -1,0 +1,17 @@
+>NM_024864.4 Homo sapiens mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_001173585.4 PREDICTED: Pan troglodytes mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_004041875.2 PREDICTED: Gorilla gorilla gorilla mitochondrial rRNA methyltransferase 1 (MRM1), transcript variant X1, mRNA
+>XM_003817956.2 PREDICTED: Pan paniscus mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_002827305.3 PREDICTED: Pongo abelii mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_017866987.1 PREDICTED: Rhinopithecus bieti mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_010376875.1 PREDICTED: Rhinopithecus roxellana mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_012055081.1 PREDICTED: Cercocebus atys mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_011953633.1 PREDICTED: Colobus angolensis palliatus mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_011990225.1 PREDICTED: Mandrillus leucophaeus mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_003912873.2 PREDICTED: Papio anubis mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_008011178.1 PREDICTED: Chlorocebus sabaeus mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_005583919.2 PREDICTED: Macaca fascicularis mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+>XM_011733167.1 PREDICTED: Macaca nemestrina mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_003278385.2 PREDICTED: Nomascus leucogenys mitochondrial rRNA methyltransferase 1 homolog (S. cerevisiae) (MRM1), mRNA
+>XM_015119458.1 PREDICTED: Macaca mulatta mitochondrial rRNA methyltransferase 1 (MRM1), mRNA
+
