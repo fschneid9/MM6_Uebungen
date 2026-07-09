@@ -1,13 +1,10 @@
 import subprocess
 from Bio.Seq import Seq
-from Bio.Blast import NCBIWWW
-from Bio.Blast import NCBIXML
-import time
-import json
 
 infile='unknown.fas'    #Fasta-Datei mit Sequenz
 outfile='16_1.gff'      #gff-Datei, die von Prodega ausgegeben wird
-subprocess.run(['prodigal','-i',infile,'-f','gff','-o',outfile])
+
+subprocess.run(['prodigal','-i',infile,'-f','gff','-o',outfile])    #führe prodigal aus
 
 gff=open(outfile, 'r')    #generierte gff-Datei öffnen
 fasta=open(infile, 'r')     #Fasta-Datei mit der gesamt-DNA-Sequenz wird geöffnet
@@ -35,9 +32,13 @@ for line in gff:
 
     #Sequenzen
     if strand=='+':     #Wenn wir auf dem FW-Strand sind, entspricht die DNA-Sequenz dem Bereich zwischen Start und Stopp
+        start=int(cols[3])
+        stop=int(cols[4])
         dna_seq=Seq(sequence[start-1:stop]) #-1, da in die Positions-Zählweise in der Sequenz bei 1 beginnt, Python aber ab 0 zählt.
     elif strand=='-':   #Wenn wir auf dem RV-Strand sind, entsprcht die DNA-Sequenz dem Reverse-Complement
-        dna_seq=Seq(sequence[start-1:stop]).reverse_complement()
+        start=int(cols[4])
+        stop=int(cols[3])
+        dna_seq=Seq(sequence[stop-1:start]).reverse_complement()
     aa_seq=dna_seq.translate()
 
     dic.update({id:{    #Im Ziel-Dictionary wird zu jedem Gen ein eigenes Dictionary mit den Informationen erstellt
